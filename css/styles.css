@@ -57,6 +57,11 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* ==================== /COMPONENTS ==================== */
 
 /* =========== Студія-сторінка - Header ============= */
@@ -112,7 +117,6 @@ button {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .navigation {
@@ -130,6 +134,7 @@ button {
   display: flex;
   align-items: center;
   column-gap: 50px;
+  margin-left: auto;
 }
 /* =========== /Студія-сторінка - Header ============= */
 
@@ -147,7 +152,6 @@ button {
   background-color: var(--logo-accent-color);
   color: var(--text-dark-theme-primary-color);
   cursor: pointer;
-  margin-bottom: 200px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -161,6 +165,8 @@ button {
 
 .studio-hero {
   background: var(--background-primary-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .studio-hero-container {
@@ -178,20 +184,17 @@ button {
   text-transform: uppercase;
   color: var(--text-dark-theme-primary-color);
   width: 696px;
-  height: 120px;
-  margin-top: 200px;
   margin-bottom: 30px;
 }
 /* =========== /Студія-сторінка - Hero ============= */
 
-/* =========== Студія-сторінка - Наші переваги ============= */
+/* =========== Студія-сторінка - Advantages ============= */
 
 .advantages {
   background-color: var(--background-secondary-color);
 }
 
 .advantages-container {
-  width: 1200px;
   display: flex;
   flex-direction: column;
 }
@@ -203,17 +206,9 @@ button {
   text-align: center;
 }
 
-.studio-advantages-headline {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
 .studio-advantage-items {
   display: flex;
   justify-content: space-between;
-  padding: 94px 0;
 }
 
 .advantage-item {
@@ -231,15 +226,15 @@ button {
   line-height: 1.71;
   color: var(--text-light-theme-secondary-color);
 }
-/* =========== /Студія-сторінка - Наші переваги ============= */
+/* =========== /Студія-сторінка - Advantages ============= */
 
-/* =========== Студія-сторінка - Чим ми займаємось ============= */
+/* =========== Студія-сторінка - Activities ============= */
 .activities {
   background-color: var(--background-secondary-color);
+  padding-top: 0;
 }
 
 .activities-container {
-  width: 1200px;
   display: flex;
   flex-direction: column;
 }
@@ -247,25 +242,17 @@ button {
 .menu-activity-items {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 94px;
 }
 
 .activities-headline {
   margin-bottom: 50px;
 }
 
-/* =========== /Студія-сторінка - Чим ми займаємось ============= */
+/* =========== /Студія-сторінка - Activities ============= */
 
-/* =========== Студія-сторінка - Наша команда ============= */
+/* =========== Студія-сторінка - Team ============= */
 .team {
   background-color: var(--background-menu-color);
-}
-
-.team-container {
-  width: 1200px;
-  display: flex;
-  flex-direction: column;
-  padding: 94px 15px;
 }
 
 .team-headline {
@@ -277,11 +264,8 @@ button {
   justify-content: space-between;
 }
 
-.team-section {
-  display: flex;
-  flex-direction: column;
+.team-item {
   background-color: var(--background-secondary-color);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .team-img {
@@ -309,7 +293,7 @@ button {
   text-align: center;
   color: var(--text-light-theme-secondary-color);
 }
-/* =========== /Студія-сторінка - Наша команда ============= */
+/* =========== /Студія-сторінка - Team ============= */
 
 /* =========== Студія-сторінка - Footer ============= */
 
@@ -327,28 +311,27 @@ button {
 
 .footer {
   background: var(--background-primary-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 .footer-contact-link {
   font-style: normal;
   line-height: 1.71;
   color: var(--text-footer-contact-color);
 }
+
 .footer-contact-link-special-color {
   color: var(--text-dark-theme-primary-color);
 }
+
 .footer-contact-link:hover,
 .footer-contact-link:focus {
   color: var(--logo-accent-color);
 }
 
-.footer-container {
-  width: 1200px;
-  display: flex;
-  flex-direction: column;
-  padding: 60px 15px;
-}
-
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -362,15 +345,8 @@ button {
 
 /* ========== Портфоліо-сторінка - =============*/
 
-.potfolio-hero {
+.portfolio-hero {
   background-color: var(--background-secondary-color);
-}
-
-.potfolio-hero-container {
-  width: 1200px;
-  display: flex;
-  flex-direction: column;
-  margin: 94px auto;
 }
 
 .portfolio-menu {
@@ -410,7 +386,6 @@ button {
 }
 
 .project-item {
-  height: 110px;
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
@@ -421,6 +396,7 @@ button {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .portfolio-project-text {
